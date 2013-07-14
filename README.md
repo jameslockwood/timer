@@ -3,7 +3,7 @@ timer.js
 
 ```JavaScript
 
-// invoke a function every midnight (00:00.00)
+// invoke a function on every date change (midnight 00:00.00)
 timer.onDateChange( fn );
 
 // invoke a function in a set amount of time
@@ -29,7 +29,7 @@ timer.every( 5 ).seconds( fn ).stopAfter( 3 );   // invokes function 3 times
 // get present time
 timer.now();
 
-// stoping watches
+// stoping invocations
 var test = timer.every( 5 ).days( fn );
 test.stop();
 
